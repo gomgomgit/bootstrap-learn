@@ -205,10 +205,10 @@
 				var scroll = $(window).scrollTop();
 				if (scroll > 0) {
 					$('.navbar').css("background", "white");
-					$('.nav-link').css("color", "#000");
+					$('.nav-link').addClass("nav-link-onscroll");
 				} else {
 					$('.navbar').css("background", "none");
-					$('.nav-link').css("color", "white");
+					$('.nav-link').removeClass("nav-link-onscroll");
 				}
 			})
 		})
