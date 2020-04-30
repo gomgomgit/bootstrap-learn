@@ -1,5 +1,10 @@
+.navbar{
+	transition: all .2s linear;
+}
 .nav-link {
 	font-size: 16px;
+	padding: 0 !important;
+	margin: 10px;
 	line-height: 18px;
 	font-weight: bold;
 	text-shadow: 0 1px 1px rgba(0,0,0,.4);
@@ -8,7 +13,28 @@
 	font-family: 'PT Sans Narrow', sans-serif;
   src: local("PT Sans Narrow"), local("PTSans-Narrow"), url("https://fonts.gstatic.com/s/ptsansnarrow/v11/BngRUXNadjH0qYEzV7ab-oWlsbCGwR0.woff2") format("woff2");
   font-style: normal;
+  transition: all .2s linear;
+  position: relative;
 }
+.nav-link:hover {
+	color: rgb(175,31,49);
+}
+.nav-link::after {
+	content: "";
+	position: absolute;
+	left: 0; top: 100%;
+	border-bottom: 3px solid #fafafa;
+	width: 100%;
+	opacity: 0;
+	transform: translateY(15px);
+	transition: opacity 0.4s, transform 0.4s;
+}
+.nav-link:hover:after {
+	opacity: 100;
+	transform: translateY(5px);
+}
+
+
 .on-image {
 	top: 30%;
 	color: #af1f31;
@@ -23,9 +49,64 @@
 	text-transform: uppercase;
 }
 
+.attention {
+	padding: 20px;
+	background-color: #ede9dd;
+	font-family: 'Lato', sans-serif;
+}
+.attention h2 {
+	font-size: 20px;
+	font-weight: bold;
+}
+.attention p {
+	font-size: 14px;
+}
+
+
+.gallery-box {
+	padding: 30px;
+}
+.gallery-box .row {
+	margin: -8px;
+}
 .on-gallery {
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
-	color: white;
+	color: #ffea66;
+	font-family: 'PT Sans Narrow', sans-serif;
+	width: 100%;
+}
+.coln {
+	padding: 8px;
+}
+
+.footer {
+	font-family: 'Lato', sans-serif;
+	background: #f9f7f3;
+	padding: 20px;
+}
+.foot-title {
+	font-weight: bold;
+	border: 1px solid #ded6c7;
+	border-right: 0;border-left: 0;
+	font-size: 14px;
+	padding: 10px 0;
+}
+.foot-list {
+	color: #c82531;
+	font-size: 13px;
+}
+.foot-list:hover,.foot-text {
+	font-size: 13px;
+	color: black;
+	text-decoration: none;
+}
+
+.cpright {
+	padding: 30px;
+	background: #ede9dd;
+	font-size: 13px;
+	color: #333;
+	font-family: 'Lato';
 }
