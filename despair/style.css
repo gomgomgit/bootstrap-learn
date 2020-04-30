@@ -1,0 +1,31 @@
+.nav-link {
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: bold;
+	text-shadow: 0 1px 1px rgba(0,0,0,.4);
+	text-decoration: none;
+	color: white;
+	font-family: 'PT Sans Narrow', sans-serif;
+  src: local("PT Sans Narrow"), local("PTSans-Narrow"), url("https://fonts.gstatic.com/s/ptsansnarrow/v11/BngRUXNadjH0qYEzV7ab-oWlsbCGwR0.woff2") format("woff2");
+  font-style: normal;
+}
+.on-image {
+	top: 30%;
+	color: #af1f31;
+	font-weight: bold;
+	font-family: 'Lato', sans-serif;
+}
+.on-image .type {
+	font-size: 30px;
+}
+.on-image .sub-type {
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+.on-gallery {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	color: white;
+}
