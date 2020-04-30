@@ -53,6 +53,15 @@
 	text-transform: uppercase;
 }
 
+.btn-lmore {
+	color: #af1f31;
+	font-size: 14px;
+	font-family: 'PT Sans Narrow' sans-serif;
+}
+.btn-lmore:hover {
+	color: #af1f31;
+}
+
 .attention {
 	padding: 20px;
 	background-color: #ede9dd;
@@ -67,8 +76,12 @@
 }
 
 
-.gallery:hover .on-gallery {
+
+.gallery:hover .on-gallery-text {
 	color: white;
+	border: 1px solid white;
+	border-right: none;border-left: none;
+	padding: 12px;
 }
 .gallery:hover .gallery-overlay {
 	background: rgba(0,0,0,.2);
@@ -87,6 +100,16 @@
 	color: #ffea66;
 	font-family: 'PT Sans Narrow', sans-serif;
 	width: 100%;
+	padding: 15px;
+}
+.on-gallery-text{
+	padding: 30px;
+	margin: 20px;
+	box-sizing: border-box;
+	border: 1px solid rgba(255,255,255,0);
+	border-right: none;border-left: none;
+	transition: all .2s linear;
+
 }
 .gallery-overlay {
 	position: absolute;
@@ -116,6 +139,20 @@
 	font-size: 13px;
 	color: black;
 	text-decoration: none;
+}
+.input-email {
+	font-size: 12px;
+	padding: 8px 12px;
+}
+.btn-su {
+	background: rgb(175,31,49);
+	border: none;
+	border-radius: 5px;
+	color: #fff;
+	width: 100%;
+	padding: 8px;
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-size: 13px;
 }
 
 .cpright {
