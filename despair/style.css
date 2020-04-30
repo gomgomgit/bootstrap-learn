@@ -67,6 +67,13 @@
 }
 
 
+.gallery:hover .on-gallery {
+	color: white;
+}
+.gallery:hover .gallery-overlay {
+	background: rgba(0,0,0,.2);
+	transition: all .3s linear;
+}
 .gallery-box {
 	padding: 30px;
 }
@@ -80,6 +87,10 @@
 	color: #ffea66;
 	font-family: 'PT Sans Narrow', sans-serif;
 	width: 100%;
+}
+.gallery-overlay {
+	position: absolute;
+	top: 0; bottom: 0; left: 0; right: 0;
 }
 .coln {
 	padding: 8px;
